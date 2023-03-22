@@ -1,53 +1,73 @@
 body {
-    background-color: #0B0C0D;
-    color:white;
-    font-family: consolas;
+    color: white;
+    font-family: Sen;
+    background: #080808;
 }
 
 .title {
-    font-size: 3em;
+    padding-top: 70px;
     text-align: center;
-    margin: 200 10 100 10;
-    line-height: 20px;
-    animation: caca 1s ease-in-out infinite
+}
+
+p {
+    position: absolute;
+    width: 30%;
+    top:25%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    letter-spacing: 3px;
+    color: red;
+    animation: animate 1000s ease-in-out infinite
     alternate;  
 }
 
-.cringeahh {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    color: #0015FF; 
-    line-height: 20px;
-    animation: animate 1s ease-in-out infinite
-    alternate;      
+a {
+    margin-right: 50px;
 }
 
-iframe{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border-radius: 5px;
-    margin-top: 75;
-  }
+.box {
+    position:absolute;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color: #ff0000;
+}
+
+.box a {
+    display:inline;
+    color: #fff;
+    text-decoration: none;
+    margin: 15px;
+    padding: 10px 20px;
+    transition: 0.7s;
+}
+
+.box a:hover {
+    background: #ff0000;
+    color: #000000;
+    box-shadow: 0 0 5px #ff0000,
+                0 0 25px #ff0000,
+                0 0 50px #ff0000,
+                0 0 100px #ff0000;
+}
+
+iframe {
+    position: absolute;
+    width: 30%;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
 
 @keyframes animate{
     from{
-        text-shadow: 0 0 20px #0015FF;
+        text-shadow: 0 0 10px red;
     }
     to{
-        text-shadow: 0 0 30px #0015FF,
-                     0 0 10px #0015FF;
-    }
-}
-
-
-@keyframes caca{
-    from{
-        text-shadow: 0 0 10px white;
-    }
-    to{
-        text-shadow: 0 0 10px white,
-                     0 0 0px white;
+        text-shadow: 0 0 10px red,
+                     0 0 10px red;
     }
 }
